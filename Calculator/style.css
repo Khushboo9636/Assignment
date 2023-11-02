@@ -1,0 +1,151 @@
+* {
+    
+    margin: 0;
+}
+.main.Container {
+    background-color: #3B4664;
+height: 800px;
+width: 100%;
+padding-top: 50px;
+}
+.cal.Container{
+    display: block;
+    margin: auto;
+    width: 50%;
+    
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+}
+.btn.Container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #252D44;
+    grid-gap:15px;
+    margin-bottom: 0px;
+    padding: 0;
+    width: 100%;
+}
+.btn{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 20%;
+    background-color:#EAE3DB;
+    font-size: 14px;
+    font-family: 'Space Mono',sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+.operator{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 20%;
+    background-color:#EAE3DB;
+    font-size: 14px;
+    font-family: 'Space Mono',sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+.equaltobtn{
+   
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    background-color:#EAE3DB;
+    font-size: 20px;
+    font-family: 'Space Mono',sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    height: 40px;
+}
+.bottomSection{
+    display: inline grid;
+    width: 100%;
+    padding: 15px;
+    background-color: #252D44;
+    border-radius: 20px;
+}
+.topSection{
+    width: 100%;
+    padding: 5px;
+}
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    color: aqua;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+@media screen and(min-width :1200px)  {
+    .main.Container{
+        display: flex;
+        width: 920px;
+        height: 490px;
+        margin: 0 auto;
+    }
+     .topSection{
+        width: 50%;
+     }
+     .bottomSection{
+         width: 50%;
+         margin-block: 35px;
+         padding-block: 50px 20 px;
+         position: relative;
+     }
+     .btn.Container {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 0;
+    }
+    .btn{
+        width: 115px;
+    }
+    .btn.res {
+        width: 115px;
+    }
+    .inputContainer > input{
+        width: 95px;
+    }
+    .cal.Container{
+        display: block;
+        margin: auto;
+        width: 73%;
+        
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 50px;
+        text-align: center;
+    }
+    
+}
+@media screen and(max-width :600px) {
+    .cal.Container{
+        display: block;
+        margin: auto;
+        width: 73%;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 50px;
+        text-align: center;
+    }
+}

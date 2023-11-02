@@ -1,0 +1,88 @@
+body{
+    background-color:#4e3333;
+}
+
+.survey-main{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 40px;
+    color: bisque;
+
+}
+#survey-form {
+    display: flex;
+    flex-flow: column;
+    border: 1px solid;
+    padding: 171px;
+    justify-content: revert-layer;
+    margin-bottom: 39px;
+    font-size: 40px;
+} 
+input {
+    background: antiquewhite;
+    border-radius: 564px;
+    width: 18rem;
+    height: 2rem
+}
+
+button{
+    margin-top: 40px;
+    background: antiquewhite;
+    border-radius: 564px;
+    width: 18rem;
+    height: 3rem;
+    font-size: 30px;
+    font-weight: 600;
+}
+select{
+    background: antiquewhite;
+    border-radius: 564px;
+    width: 18rem;
+    height: 2rem
+}
+
+.survey-main h2{
+    color: #aaaaaa;
+    display: block;
+    text-align: center;
+}
+
+   
+
+.popup {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; 
+  }
+  
+ 
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

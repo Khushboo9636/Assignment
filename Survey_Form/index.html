@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="survey-main">
+        <h2 style="font-size: 55px;">Customer Survey Form</h2> 
+        <div class="continer" >
+          <form id="survey-form">
+        <label for="first-name" style="padding: 4px;">First Name:</label>
+         <input type="text" id="first-name" name="first-name" required>
+
+          <label for="last-name"  style="padding: 4px;">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required>
+
+         <label for="dob" style="padding: 4px;">Date of Birth:</label>
+         <input type="date" id="dob" name="dob" >
+
+        <label for="country" style="padding: 4px;">Country:</label>
+            <select id="country" required>
+              <option value="">Select Country</option>
+             <option value="USA">USA</option>
+               <option value="Canada">Canada</option>
+               <option value="India">India</option>
+               <option value="UK">UK</option>
+             
+           </select>
+
+         <label>Gender:</label>
+         <div style="display: flex; flex-flow: row;"> 
+            <input type="radio" id="male">    
+              <label for="male">Male</label>
+          
+        </div>
+         <div style="display: flex; flex-flow: row;"> 
+            <input type="radio" id="female"><br>
+             <label for="female">Female</label>
+        
+        </div>
+
+
+         <label for="profession" style="margin-top: 10px; margin-bottom: 5px;">Profession:</label>
+         <input type="text" id="profession" required>
+
+        <label for="email">Email:</label>
+         <input type="email" id="email" required>
+
+         <label for="mobile">Mobile Number:</label>
+           <input type="tel" id="mobile" required>
+
+         <button type="button" onclick="submitForm()">Submit</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+     </form>
+    </div>
+    <div class="footer-part">
+        <footer> 
+            <p>@ 2018 Customer Survey Form.All Rights Reserved | Design by W3 Layout</p>
+        </footer>
+    </div>
+</div>
+
+    <div id="popup" class="popup">
+       <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+             <h2>Survey Form Data</h2>
+           <div id="form-data"></div>
+         </div>
+    </div>
+    
+
+  <script src="script.js"></script>
+</body>
+</html>
